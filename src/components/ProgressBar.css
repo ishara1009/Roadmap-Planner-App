@@ -1,0 +1,115 @@
+/* Progress Bar Styles */
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.progress-bar-wrapper {
+  flex: 1;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 24px;
+  background: var(--background-color);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+  border-radius: 12px;
+  transition: width 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+}
+
+/* Add a shine effect */
+.progress-bar-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* No animation when fill is empty */
+.progress-bar-fill:not([style*="width: 0"]) .progress-bar-shine {
+  animation: shine 2s infinite;
+}
+
+.progress-bar-fill[style*="width: 0"] .progress-bar-shine {
+  animation: none;
+}
+
+.progress-percentage {
+  min-width: 50px;
+  text-align: center;
+}
+
+.percentage-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .progress-bar-container {
+    gap: 12px;
+  }
+
+  .progress-bar-track {
+    height: 20px;
+  }
+
+  .percentage-text {
+    font-size: 0.95rem;
+  }
+
+  .progress-percentage {
+    min-width: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-bar-container {
+    gap: 10px;
+  }
+
+  .progress-bar-track {
+    height: 18px;
+  }
+
+  .percentage-text {
+    font-size: 0.85rem;
+  }
+
+  .progress-percentage {
+    min-width: 40px;
+  }
+}

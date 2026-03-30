@@ -1,0 +1,250 @@
+/* Node Card Styles */
+.node-card {
+  background: var(--surface-color);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.node-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.2);
+}
+
+.node-card.completed {
+  background: linear-gradient(135deg, rgba(109, 40, 217, 0.1), rgba(16, 185, 129, 0.1));
+  border-color: var(--success-color);
+}
+
+.node-card.completed:hover {
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+}
+
+/* Node Header */
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.node-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+  flex: 1;
+  word-break: break-word;
+}
+
+.node-card.completed .node-title {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+/* Delete Button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--error-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  transform: scale(1.1);
+}
+
+/* Node Body */
+.node-body {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.node-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+  word-break: break-word;
+}
+
+.node-card.completed .node-description {
+  opacity: 0.7;
+}
+
+/* Node Meta */
+.node-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background: var(--background-color);
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.meta-label {
+  font-weight: 600;
+}
+
+.meta-value {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Node Footer */
+.node-footer {
+  display: flex;
+  gap: 10px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:hover {
+  background: rgba(109, 40, 217, 0.1);
+  transform: translateY(-2px);
+}
+
+.toggle-btn:active {
+  transform: translateY(0);
+}
+
+.toggle-btn.active {
+  background: var(--success-color);
+  border-color: var(--success-color);
+  color: white;
+}
+
+.toggle-btn.active:hover {
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+}
+
+.toggle-icon {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .toggle-text {
+    display: none;
+  }
+
+  .toggle-btn {
+    padding: 8px 10px;
+  }
+}
+
+/* Completion Badge */
+.completion-badge {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: var(--success-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  animation: slideInDown 0.3s ease-out;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .node-card {
+    padding: 18px;
+  }
+
+  .node-title {
+    font-size: 1rem;
+  }
+
+  .node-description {
+    font-size: 0.9rem;
+  }
+
+  .toggle-btn {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .node-card {
+    padding: 15px;
+  }
+
+  .node-title {
+    font-size: 0.95rem;
+  }
+
+  .node-description {
+    font-size: 0.85rem;
+  }
+
+  .node-meta {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+
+  .delete-btn {
+    font-size: 1rem;
+  }
+}
