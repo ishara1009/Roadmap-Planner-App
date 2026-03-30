@@ -2,6 +2,33 @@
 
 An advanced web application for creating, organizing, and tracking your roadmap progress with a beautiful, modern interface.
 
+## Gallery
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="/images/create-roadmap.svg" width="150" alt="Create Roadmaps"/>
+        <p><strong>Create Roadmaps</strong><br/>Build visual roadmaps with steps</p>
+      </td>
+      <td align="center" width="50%">
+        <img src="/images/track-progress.svg" width="150" alt="Track Progress"/>
+        <p><strong>Track Progress</strong><br/>Monitor completion in real-time</p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <img src="/images/visual-timeline.svg" width="150" alt="Visual Timeline"/>
+        <p><strong>Visual Timeline</strong><br/>See your journey visualized</p>
+      </td>
+      <td align="center" width="50%">
+        <img src="/images/data-persistence.svg" width="150" alt="Data Persistence"/>
+        <p><strong>Auto-Save Data</strong><br/>Persistent localStorage</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## Features
 
 - **Create Roadmaps**: Build visual roadmaps with multiple steps and milestones

@@ -74,9 +74,15 @@
 }
 
 .feature-icon {
-  font-size: 3rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
   display: inline-block;
+  font-weight: 700;
+  color: var(--primary-color);
+  background: rgba(109, 40, 217, 0.1);
+  padding: 15px 20px;
+  border-radius: 8px;
+  letter-spacing: 1px;
 }
 
 .feature-card h3 {

@@ -78,7 +78,7 @@ export default function RoadmapPage() {
             <h2>Your Steps</h2>
             {roadmapData.length === 0 ? (
               <div className="empty-state">
-                <div className="empty-icon">📭</div>
+                <div className="empty-icon">NO STEPS</div>
                 <p>No steps yet. Add your first step to get started!</p>
               </div>
             ) : (

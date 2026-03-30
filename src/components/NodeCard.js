@@ -44,7 +44,7 @@ export default function NodeCard({ node, onToggle, onDelete }) {
           aria-label={node.completed ? 'Mark as incomplete' : 'Mark as complete'}
           title={node.completed ? 'Mark as incomplete' : 'Mark as complete'}
         >
-          <span className="toggle-icon">{node.completed ? '✓' : '○'}</span>
+          <span className="toggle-icon">{node.completed ? '[✓]' : '[ ]'}</span>
           <span className="toggle-text">
             {node.completed ? 'Completed' : 'Mark Complete'}
           </span>
@@ -54,7 +54,7 @@ export default function NodeCard({ node, onToggle, onDelete }) {
       {/* Completion Badge */}
       {node.completed && (
         <div className="completion-badge">
-          <span>✓ Completed</span>
+          <span>DONE</span>
         </div>
       )}
     </div>

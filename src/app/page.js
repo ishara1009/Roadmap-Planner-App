@@ -17,19 +17,19 @@ export default function HomePage() {
 
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon">📋</div>
+            <div className="feature-icon">LIST</div>
             <h3>Create Roadmaps</h3>
             <p>Build visual roadmaps with multiple steps and milestones</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">✓</div>
+            <div className="feature-icon">DONE</div>
             <h3>Track Progress</h3>
             <p>Monitor your progress with real-time completion tracking</p>
           </div>
 
           <div className="feature-card">
-            <div className="feature-icon">📊</div>
+            <div className="feature-icon">CHART</div>
             <h3>Visual Timeline</h3>
             <p>See your journey with beautiful visual timelines</p>
           </div>

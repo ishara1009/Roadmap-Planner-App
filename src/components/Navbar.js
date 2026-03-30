@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="navbar-container">
         {/* Logo/Brand */}
         <Link href="/" className="navbar-brand">
-          <span className="brand-icon">🗺️</span>
+          <span className="brand-icon">MAP</span>
           <span className="brand-text">Roadmap Planner</span>
         </Link>
 
