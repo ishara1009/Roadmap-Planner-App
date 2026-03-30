@@ -2,8 +2,6 @@
 
 An advanced web application for creating, organizing, and tracking your roadmap progress with a beautiful, modern interface.
 
-## Gallery
-
 <div align="center">
   
   ![Create Roadmaps](./src/images/1.png)
