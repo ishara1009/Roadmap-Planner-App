@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#1e293b" rx="12"/>
+  
+  <!-- Timeline vertical line -->
+  <line x1="100" y1="25" x2="100" y2="175" stroke="#6d28d9" stroke-width="2"/>
+  
+  <!-- Timeline nodes left -->
+  <circle cx="100" cy="45" r="10" fill="#6d28d9"/>
+  <rect x="30" y="35" width="50" height="20" fill="#6d28d9" opacity="0.2" rx="4"/>
+  <text x="55" y="50" font-size="10" fill="#a78bfa" text-anchor="middle" font-weight="bold">Start</text>
+  
+  <!-- Timeline nodes right -->
+  <circle cx="100" cy="90" r="10" fill="#6d28d9"/>
+  <rect x="120" y="80" width="50" height="20" fill="#6d28d9" opacity="0.2" rx="4"/>
+  <text x="145" y="95" font-size="10" fill="#a78bfa" text-anchor="middle" font-weight="bold">Phase 1</text>
+  
+  <!-- Timeline nodes left -->
+  <circle cx="100" cy="135" r="10" fill="#10b981"/>
+  <rect x="30" y="125" width="50" height="20" fill="#10b981" opacity="0.2" rx="4"/>
+  <text x="55" y="140" font-size="10" fill="#10b981" text-anchor="middle" font-weight="bold">Done</text>
+  
+  <!-- Checkmark on completed -->
+  <path d="M 96 135 L 99 138 L 104 133" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

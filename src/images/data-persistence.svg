@@ -1,0 +1,31 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#1e293b" rx="12"/>
+  
+  <!-- Cloud/Storage icon -->
+  <path d="M 60 80 Q 50 80 50 90 L 50 130 Q 50 140 60 140 L 140 140 Q 150 140 150 130 L 150 90 Q 150 80 140 80 Q 135 70 120 70 Q 110 60 95 60 Q 75 60 65 75 Q 60 72 55 75" 
+        fill="#6d28d9" opacity="0.2" stroke="#6d28d9" stroke-width="2"/>
+  
+  <!-- Upload/Save arrows -->
+  <g opacity="0.8">
+    <!-- Left arrow -->
+    <line x1="75" y1="110" x2="75" y2="80" stroke="#a78bfa" stroke-width="2"/>
+    <path d="M 70 85 L 75 75 L 80 85" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right arrow -->
+    <line x1="125" y1="110" x2="125" y2="80" stroke="#a78bfa" stroke-width="2"/>
+    <path d="M 120 85 L 125 75 L 130 85" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Database cylinders at bottom -->
+  <rect x="65" y="125" width="30" height="8" fill="#10b981" rx="2"/>
+  <ellipse cx="80" cy="125" rx="15" ry="4" fill="#10b981" opacity="0.6"/>
+  
+  <rect x="105" y="125" width="30" height="8" fill="#10b981" rx="2"/>
+  <ellipse cx="120" cy="125" rx="15" ry="4" fill="#10b981" opacity="0.6"/>
+  
+  <!-- Sync indicator -->
+  <circle cx="160" cy="50" r="18" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M 155 47 Q 155 45 160 45 Q 162 45 162 48" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 165 53 Q 165 55 160 55 Q 158 55 158 52" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+</svg>

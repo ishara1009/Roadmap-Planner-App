@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#1e293b" rx="12"/>
+  
+  <!-- Progress bar background -->
+  <rect x="30" y="60" width="140" height="12" fill="#334155" rx="6"/>
+  
+  <!-- Progress bar fill -->
+  <rect x="30" y="60" width="105" height="12" fill="#6d28d9" rx="6"/>
+  
+  <!-- Percentage text -->
+  <circle cx="100" cy="100" r="35" fill="none" stroke="#6d28d9" stroke-width="3"/>
+  <text x="100" y="108" font-size="28" font-weight="bold" fill="#a78bfa" text-anchor="middle">52%</text>
+  
+  <!-- Checkmark circles at different stages -->
+  <circle cx="50" cy="150" r="8" fill="#10b981"/>
+  <path d="M 47 150 L 49 152 L 53 148" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <circle cx="100" cy="150" r="8" fill="#10b981"/>
+  <path d="M 97 150 L 99 152 L 103 148" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <circle cx="150" cy="150" r="8" fill="#cbd5e1" opacity="0.5"/>
+</svg>

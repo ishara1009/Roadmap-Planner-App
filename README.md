@@ -8,21 +8,21 @@ An advanced web application for creating, organizing, and tracking your roadmap 
   <table>
     <tr>
       <td align="center" width="50%">
-        <img src="./public/images/create-roadmap.svg" width="150" alt="Create Roadmaps"/>
+        <img src="./src/images/create-roadmap.svg" width="150" alt="Create Roadmaps"/>
         <p><strong>Create Roadmaps</strong><br/>Build visual roadmaps with steps</p>
       </td>
       <td align="center" width="50%">
-        <img src="./public/images/track-progress.svg" width="150" alt="Track Progress"/>
+        <img src="./src/images/track-progress.svg" width="150" alt="Track Progress"/>
         <p><strong>Track Progress</strong><br/>Monitor completion in real-time</p>
       </td>
     </tr>
     <tr>
       <td align="center" width="50%">
-        <img src="./public/images/visual-timeline.svg" width="150" alt="Visual Timeline"/>
+        <img src="./src/images/visual-timeline.svg" width="150" alt="Visual Timeline"/>
         <p><strong>Visual Timeline</strong><br/>See your journey visualized</p>
       </td>
       <td align="center" width="50%">
-        <img src="./public/images/data-persistence.svg" width="150" alt="Data Persistence"/>
+        <img src="./src/images/data-persistence.svg" width="150" alt="Data Persistence"/>
         <p><strong>Auto-Save Data</strong><br/>Persistent localStorage</p>
       </td>
     </tr>
