@@ -5,28 +5,15 @@ An advanced web application for creating, organizing, and tracking your roadmap 
 ## Gallery
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <img src="./src/images/1.png" width="150" alt="Create Roadmaps"/>
-        <p><strong>Create Roadmaps</strong></p>
-      </td>
-      <td align="center" width="50%">
-        <img src="./src/images/2.png" width="150" alt="Track Progress"/>
-        <p><strong>Track Progress</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" width="50%">
-        <img src="./src/images/3.png" width="150" alt="Visual Timeline"/>
-        <p><strong>Visual Timeline</strong></p>
-      </td>
-      <td align="center" width="50%">
-        <img src="./src/images/4.png" width="150" alt="Features"/>
-        <p><strong>Features</strong></p>
-      </td>
-    </tr>
-  </table>
+  
+  ![Create Roadmaps](./src/images/1.png)
+  
+  ![Track Progress](./src/images/2.png)
+  
+  ![Visual Timeline](./src/images/3.png)
+  
+  ![Features](./src/images/4.png)
+  
 </div>
 
 ## Features
